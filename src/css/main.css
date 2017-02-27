@@ -1,0 +1,714 @@
+@import url("./reset.css");
+@import url("./font-awesome.css");
+/*=======================*/
+/* VARIABLES, FUNCTIONS
+/*=======================*/
+/*=======================*/
+/* MIXINS
+/*=======================*/
+/*=======================*/
+/* FONT FACES
+/*=======================*/
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-BookOblique.eot);
+  src: url(../assets/fonts/FuturaStd-BookOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-BookOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-BookOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-BookOblique.ttf) format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Light.eot);
+  src: url(../assets/fonts/FuturaStd-Light.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Light.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Light.woff) format("woff"), url(../assets/fonts/FuturaStd-Light.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-MediumOblique.eot);
+  src: url(../assets/fonts/FuturaStd-MediumOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-MediumOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-MediumOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-MediumOblique.ttf) format("truetype");
+  font-weight: 500;
+  font-style: italic; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Heavy.eot);
+  src: url(../assets/fonts/FuturaStd-Heavy.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Heavy.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Heavy.woff) format("woff"), url(../assets/fonts/FuturaStd-Heavy.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-BoldOblique.eot);
+  src: url(../assets/fonts/FuturaStd-BoldOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-BoldOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-BoldOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-BoldOblique.ttf) format("truetype");
+  font-weight: bold;
+  font-style: italic; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Bold.eot);
+  src: url(../assets/fonts/FuturaStd-Bold.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Bold.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Bold.woff) format("woff"), url(../assets/fonts/FuturaStd-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-HeavyOblique.eot);
+  src: url(../assets/fonts/FuturaStd-HeavyOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-HeavyOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-HeavyOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-HeavyOblique.ttf) format("truetype");
+  font-weight: 900;
+  font-style: italic; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-ExtraBold.eot);
+  src: url(../assets/fonts/FuturaStd-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-ExtraBold.woff2) format("woff2"), url(../assets/fonts/FuturaStd-ExtraBold.woff) format("woff"), url(../assets/fonts/FuturaStd-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Book.eot);
+  src: url(../assets/fonts/FuturaStd-Book.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Book.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Book.woff) format("woff"), url(../assets/fonts/FuturaStd-Book.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-CondensedLight.eot);
+  src: url(../assets/fonts/FuturaStd-CondensedLight.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-CondensedLight.woff2) format("woff2"), url(../assets/fonts/FuturaStd-CondensedLight.woff) format("woff"), url(../assets/fonts/FuturaStd-CondensedLight.ttf) format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-ExtraBoldOblique.eot);
+  src: url(../assets/fonts/FuturaStd-ExtraBoldOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.ttf) format("truetype");
+  font-weight: 800;
+  font-style: italic; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Condensed.eot);
+  src: url(../assets/fonts/FuturaStd-Condensed.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Condensed.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Condensed.woff) format("woff"), url(../assets/fonts/FuturaStd-Condensed.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-Medium.eot);
+  src: url(../assets/fonts/FuturaStd-Medium.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Medium.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Medium.woff) format("woff"), url(../assets/fonts/FuturaStd-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: "Futura Std";
+  src: url(../assets/fonts/FuturaStd-LightOblique.eot);
+  src: url(../assets/fonts/FuturaStd-LightOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-LightOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-LightOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-LightOblique.ttf) format("truetype");
+  font-weight: 300;
+  font-style: italic; }
+/*=======================*/
+/* 12 COLUMNS RESPONSIVE GRID
+/*=======================*/
+.row {
+  display: flex; }
+
+.col_h {
+  width: 4.16667%; }
+
+.col_1 {
+  width: 8.33333%; }
+
+.col_1h {
+  width: 12.5%; }
+
+.col_2 {
+  width: 16.66667%; }
+
+.col_2h {
+  width: 20.83333%; }
+
+.col_3 {
+  width: 25%; }
+
+.col_3h {
+  width: 29.16667%; }
+
+.col_4 {
+  width: 33.33333%; }
+
+.col_4h {
+  width: 37.5%; }
+
+.col_5 {
+  width: 41.66667%; }
+
+.col_5h {
+  width: 45.83333%; }
+
+.col_6 {
+  width: 50%; }
+
+.col_6h {
+  width: 54.16667%; }
+
+.col_7 {
+  width: 58.33333%; }
+
+.col_7h {
+  width: 62.5%; }
+
+.col_8 {
+  width: 66.66667%; }
+
+.col_8h {
+  width: 70.83333%; }
+
+.col_9 {
+  width: 75%; }
+
+.col_9h {
+  width: 79.16667%; }
+
+.col_10 {
+  width: 83.33333%; }
+
+.col_10h {
+  width: 87.5%; }
+
+.col_11 {
+  width: 91.66667%; }
+
+.col_11h {
+  width: 95.83333%; }
+
+.col_12 {
+  width: 100%; }
+
+/*=======================*/
+/* GENERAL RULES
+/*=======================*/
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.15); }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75); }
+
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: inherit;
+  box-sizing: border-box; }
+
+html, body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+html {
+  background: #000;
+  font-family: "Futura Std", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FFF;
+  font-style: italic; }
+
+body {
+  transform-origin: 50%;
+  width: 100%;
+  height: 100%;
+  cursor: default; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: auto; }
+
+hr {
+  position: relative;
+  width: calc(100% - 17.5px);
+  margin-left: 7.5px; }
+
+hr:after, hr:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border: 1px #FFF solid;
+  transform: rotate(45deg);
+  top: -2.5px; }
+
+hr:after {
+  left: -7.5px; }
+
+hr:before {
+  right: -8.5px; }
+
+::-webkit-input-placeholder {
+  letter-spacing: 0; }
+
+:-moz-placeholder {
+  letter-spacing: 0; }
+
+::-moz-placeholder {
+  letter-spacing: 0; }
+
+:-ms-input-placeholder {
+  letter-spacing: 0; }
+
+::selection {
+  background: #000;
+  color: #FFF;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #000;
+  color: #FFF;
+  text-shadow: none; }
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.weight-medium {
+  font-weight: 500; }
+
+.weight-bold {
+  font-weight: 700; }
+
+.flex-justify-sb {
+  justify-content: space-between; }
+
+.flex-justify-start {
+  justify-content: flex-start; }
+
+.fontsize-small {
+  font-size: .75em;
+  margin-right: .5em; }
+
+@media (orientation: portrait) {
+  body {
+    background: #000 url(../assets/img/rotateDevice.png) no-repeat 50% 50%;
+    background-size: 30%; }
+
+  #app {
+    visibility: hidden; } }
+/*=======================*/
+/* COMPONENTS
+/*=======================*/
+/* CONTAINERS ------------*/
+.screen, #screen_topMovie .topMovie_listWrapper, #screen_topMovie .topMovie_item-background, #screen_topMovie .topMovie_item-content, #screen_topMovie .topMovie_details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#topScreensWrapper {
+  position: relative; }
+
+/*=======================*/
+/* HEADER
+/*=======================*/
+#header {
+  position: absolute;
+  z-index: 9999;
+  padding: 75px 75px 0 75px; }
+  #header .header-logo {
+    width: 196px;
+    height: auto;
+    opacity: 1;
+    -webkit-transition: -webkit-opacity .4s;
+    -ms-transition: -ms-opacity .4s;
+    transition: opacity .4s; }
+    #header .header-logo.is--hidden {
+      opacity: 0; }
+
+/*=======================*/
+/* HOME SCREEN
+/*=======================*/
+/* CONTAINER ------------*/
+#screen_home {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  #screen_home .home_patchworkBG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+    top: 0;
+    left: 0; }
+    #screen_home .home_patchworkBG-poster {
+      width: 240px;
+      height: 240px;
+      background-size: cover;
+      position: relative;
+      opacity: 0.1;
+      -webkit-transition: -webkit-opacity 1s;
+      -ms-transition: -ms-opacity 1s;
+      transition: opacity 1s; }
+      #screen_home .home_patchworkBG-poster.is--active {
+        opacity: 1; }
+  #screen_home .home_headingWrapper {
+    width: 100%;
+    z-index: 1; }
+    #screen_home .home_headingWrapper h1 {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 0.25em;
+      font-size: 80px;
+      line-height: 1.25em;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5em; }
+      #screen_home .home_headingWrapper h1 span {
+        font-weight: 900; }
+    #screen_home .home_headingWrapper h2 {
+      color: #888;
+      line-height: 1.5em;
+      font-size: 20px; }
+  #screen_home .home_mouse {
+    position: absolute;
+    width: 60px;
+    height: 90px;
+    bottom: 75px;
+    color: #FFF;
+    border: 2px solid currentColor;
+    border-radius: 28px;
+    z-index: 1;
+    left: calc((100% - 60px) / 2); }
+    #screen_home .home_mouse:after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 24px;
+      top: 20px;
+      left: calc((100% - 13px) / 2);
+      background: currentColor;
+      border-radius: 5px;
+      -webkit-animation: mouseMove 2s ease-in-out infinite;
+      -ms-animation: mouseMove 2s ease-in-out infinite;
+      animation: mouseMove 2s ease-in-out infinite; }
+
+@-webkit-keyframes mouseMove {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%); } }
+/*@-moz-keyframes mouseMove {
+  @content;
+}  */
+@-ms-keyframes mouseMove {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%); } }
+/*@-o-keyframes mouseMove {
+  @content;
+}*/
+@keyframes mouseMove {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%); } }
+/*=======================*/
+/* TOP MOVIE SCREEN
+/*=======================*/
+/* CONTAINER ------------*/
+#screen_topMovie .topMovie_listWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+#screen_topMovie .topMovie_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #screen_topMovie .topMovie_item-background {
+    opacity: 0.96; }
+  #screen_topMovie .topMovie_item-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    #screen_topMovie .topMovie_item-content-options {
+      display: flex;
+      width: 320px;
+      justify-content: space-around;
+      margin-top: 1.5em; }
+      #screen_topMovie .topMovie_item-content-options-element {
+        cursor: pointer;
+        position: relative; }
+        #screen_topMovie .topMovie_item-content-options-element:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 2px;
+          left: 0;
+          top: 1.4em;
+          background: currentColor;
+          -webkit-transition: -webkit-width .2s ease-in-out;
+          -ms-transition: -ms-width .2s ease-in-out;
+          transition: width .2s ease-in-out; }
+        #screen_topMovie .topMovie_item-content-options-element:hover:after {
+          width: 100%; }
+      #screen_topMovie .topMovie_item-content-options-hasWatched {
+        display: flex;
+        margin-left: 2em; }
+        #screen_topMovie .topMovie_item-content-options-hasWatched-checkbox {
+          width: 1em;
+          height: 1em;
+          border: 1px #FFF solid;
+          display: inline-block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          -webkit-transform: translate3d(-200%, 0, 0);
+          -ms-transform: translate3d(-200%, 0, 0);
+          transform: translate3d(-200%, 0, 0); }
+          #screen_topMovie .topMovie_item-content-options-hasWatched-checkbox .fa {
+            font-size: 2em;
+            opacity: 0;
+            -webkit-transition: -webkit-font-size .15s, opacity .15s;
+            -ms-transition: -ms-font-size .15s, opacity .15s;
+            transition: font-size .15s, opacity .15s; }
+          #screen_topMovie .topMovie_item-content-options-hasWatched-checkbox.is--checked .fa {
+            font-size: 1.5em;
+            opacity: 1; }
+    #screen_topMovie .topMovie_item-content-label {
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 36px;
+      padding: 0.5em;
+      height: 2em;
+      transform: translate3d(-85%, 50%, 0);
+      display: flex; }
+      #screen_topMovie .topMovie_item-content-label-topName {
+        margin-right: 0.5em; }
+      #screen_topMovie .topMovie_item-content-label-position {
+        font-size: 96px;
+        font-weight: bold;
+        text-shadow: 8px 4px 0 rgba(0, 0, 0, 0.25); }
+    #screen_topMovie .topMovie_item-content-poster {
+      width: 320px;
+      height: auto; }
+    #screen_topMovie .topMovie_item-content-title {
+      font-weight: bold;
+      font-size: 48px;
+      margin-top: -0.5em;
+      text-shadow: 8px -4px 0 rgba(0, 0, 0, 0.25); }
+#screen_topMovie .topMovie_pagination {
+  position: absolute;
+  width: 100%;
+  bottom: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  -ms-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+  -webkit-transition: -webkit-transform .2s, opacity .2s;
+  -ms-transition: -ms-transform .2s, opacity .2s;
+  transition: transform .2s, opacity .2s; }
+  #screen_topMovie .topMovie_pagination.is--visible {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  #screen_topMovie .topMovie_pagination-element {
+    color: #444;
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: -webkit-font-size .2s ease-in-out;
+    -ms-transition: -ms-font-size .2s ease-in-out;
+    transition: font-size .2s ease-in-out; }
+    #screen_topMovie .topMovie_pagination-element:not(:last-child) {
+      margin-right: 0.5em; }
+    #screen_topMovie .topMovie_pagination-element.is--active, #screen_topMovie .topMovie_pagination-element.has--watched {
+      font-weight: 500; }
+    #screen_topMovie .topMovie_pagination-element.is--active {
+      font-size: 1.375em;
+      color: #FFF; }
+    #screen_topMovie .topMovie_pagination-element:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      top: 1.1em;
+      background: currentColor;
+      -webkit-transition: -webkit-width .2s ease-in-out;
+      -ms-transition: -ms-width .2s ease-in-out;
+      transition: width .2s ease-in-out; }
+    #screen_topMovie .topMovie_pagination-element.has--watched:after {
+      width: 100%; }
+#screen_topMovie .topMovie_nav-element {
+  position: absolute;
+  font-size: 2em;
+  top: calc(50% - 1em);
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: -webkit-transform .2s, opacity .2s;
+  -ms-transition: -ms-transform .2s, opacity .2s;
+  transition: transform .2s, opacity .2s; }
+  #screen_topMovie .topMovie_nav-element.is--visible {
+    opacity: 0.25;
+    pointer-events: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+    #screen_topMovie .topMovie_nav-element.is--visible:hover {
+      opacity: 1; }
+#screen_topMovie .topMovie_nav-prev {
+  left: 75px;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+#screen_topMovie .topMovie_nav-next {
+  right: 75px;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+#screen_topMovie .topMovie_score {
+  position: absolute;
+  right: 75px;
+  height: 6em;
+  top: calc(50% - 3em);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  opacity: 0;
+  pointervents: none;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  -webkit-transition: -webkit-transform .4s, opacity .2s;
+  -ms-transition: -ms-transform .4s, opacity .2s;
+  transition: transform .4s, opacity .2s; }
+  #screen_topMovie .topMovie_score.is--visible {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .4s .2s, opacity .2s .2s;
+    -ms-transition: -ms-transform .4s .2s, opacity .2s .2s;
+    transition: transform .4s .2s, opacity .2s .2s; }
+  #screen_topMovie .topMovie_score-text {
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 0.5em; }
+  #screen_topMovie .topMovie_score-result {
+    font-size: 1.25em; }
+#screen_topMovie .topMovie_details {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: -webkit-transform .4s, opacity .2s;
+  -ms-transition: -ms-transform .4s, opacity .2s;
+  transition: transform .4s, opacity .2s; }
+  #screen_topMovie .topMovie_details.is--visible {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s, opacity .4s;
+    -ms-transition: -ms-transform .4s, opacity .4s;
+    transition: transform .4s, opacity .4s; }
+  #screen_topMovie .topMovie_details-menu {
+    position: absolute;
+    right: 75px;
+    top: 75px;
+    font-size: 2em;
+    cursor: pointer; }
+    #screen_topMovie .topMovie_details-menu-element {
+      opacity: 0.25;
+      -webkit-transition: -webkit-opacity .2s;
+      -ms-transition: -ms-opacity .2s;
+      transition: opacity .2s; }
+      #screen_topMovie .topMovie_details-menu-element.is--active, #screen_topMovie .topMovie_details-menu-element:hover {
+        opacity: 1; }
+      #screen_topMovie .topMovie_details-menu-element:first-child {
+        margin-bottom: 0.5em; }
+  #screen_topMovie .topMovie_details-content {
+    width: 85%;
+    height: 25%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 30px;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    -ms-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform .4s, opacity .4s;
+    -ms-transition: -ms-transform .4s, opacity .4s;
+    transition: transform .4s, opacity .4s; }
+    #screen_topMovie .topMovie_details-content.is--visible {
+      opacity: 1;
+      pointer-events: auto;
+      -webkit-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); }
+    #screen_topMovie .topMovie_details-content-poster {
+      margin-right: 30px;
+      height: 100%;
+      width: auto; }
+    #screen_topMovie .topMovie_details-content-text {
+      display: flex;
+      flex-direction: column; }
+      #screen_topMovie .topMovie_details-content-text-header {
+        display: flex;
+        -webkit-transform: translate3d(-50px, 0, 0);
+        -ms-transform: translate3d(-50px, 0, 0);
+        transform: translate3d(-50px, 0, 0);
+        margin-top: 1em; }
+        #screen_topMovie .topMovie_details-content-text-header-title {
+          padding: 0.75em;
+          font-weight: bold;
+          background: #0d0d0d; }
+        #screen_topMovie .topMovie_details-content-text-header-cta {
+          padding: 0.75em;
+          font-weight: 500;
+          background: #1a1a1a; }
+      #screen_topMovie .topMovie_details-content-text-info {
+        display: inline;
+        text-transform: none;
+        margin-top: 1em;
+        color: #999; }
+      #screen_topMovie .topMovie_details-content-text-overview {
+        margin-top: 1em;
+        text-transform: none;
+        width: 100%;
+        line-height: 1.25em; }
+
+/*# sourceMappingURL=main.css.map */
