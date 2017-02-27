@@ -15,84 +15,98 @@
   src: url(../assets/fonts/FuturaStd-BookOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-BookOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-BookOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-BookOblique.ttf) format("truetype");
   font-weight: normal;
   font-style: italic; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Light.eot);
   src: url(../assets/fonts/FuturaStd-Light.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Light.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Light.woff) format("woff"), url(../assets/fonts/FuturaStd-Light.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-MediumOblique.eot);
   src: url(../assets/fonts/FuturaStd-MediumOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-MediumOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-MediumOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-MediumOblique.ttf) format("truetype");
   font-weight: 500;
   font-style: italic; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Heavy.eot);
   src: url(../assets/fonts/FuturaStd-Heavy.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Heavy.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Heavy.woff) format("woff"), url(../assets/fonts/FuturaStd-Heavy.ttf) format("truetype");
   font-weight: 900;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-BoldOblique.eot);
   src: url(../assets/fonts/FuturaStd-BoldOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-BoldOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-BoldOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-BoldOblique.ttf) format("truetype");
   font-weight: bold;
   font-style: italic; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Bold.eot);
   src: url(../assets/fonts/FuturaStd-Bold.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Bold.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Bold.woff) format("woff"), url(../assets/fonts/FuturaStd-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-HeavyOblique.eot);
   src: url(../assets/fonts/FuturaStd-HeavyOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-HeavyOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-HeavyOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-HeavyOblique.ttf) format("truetype");
   font-weight: 900;
   font-style: italic; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-ExtraBold.eot);
   src: url(../assets/fonts/FuturaStd-ExtraBold.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-ExtraBold.woff2) format("woff2"), url(../assets/fonts/FuturaStd-ExtraBold.woff) format("woff"), url(../assets/fonts/FuturaStd-ExtraBold.ttf) format("truetype");
   font-weight: 800;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Book.eot);
   src: url(../assets/fonts/FuturaStd-Book.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Book.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Book.woff) format("woff"), url(../assets/fonts/FuturaStd-Book.ttf) format("truetype");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-CondensedLight.eot);
   src: url(../assets/fonts/FuturaStd-CondensedLight.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-CondensedLight.woff2) format("woff2"), url(../assets/fonts/FuturaStd-CondensedLight.woff) format("woff"), url(../assets/fonts/FuturaStd-CondensedLight.ttf) format("truetype");
   font-weight: 300;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-ExtraBoldOblique.eot);
   src: url(../assets/fonts/FuturaStd-ExtraBoldOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-ExtraBoldOblique.ttf) format("truetype");
   font-weight: 800;
   font-style: italic; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Condensed.eot);
   src: url(../assets/fonts/FuturaStd-Condensed.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Condensed.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Condensed.woff) format("woff"), url(../assets/fonts/FuturaStd-Condensed.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-Medium.eot);
   src: url(../assets/fonts/FuturaStd-Medium.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-Medium.woff2) format("woff2"), url(../assets/fonts/FuturaStd-Medium.woff) format("woff"), url(../assets/fonts/FuturaStd-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
+
 @font-face {
   font-family: "Futura Std";
   src: url(../assets/fonts/FuturaStd-LightOblique.eot);
   src: url(../assets/fonts/FuturaStd-LightOblique.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/FuturaStd-LightOblique.woff2) format("woff2"), url(../assets/fonts/FuturaStd-LightOblique.woff) format("woff"), url(../assets/fonts/FuturaStd-LightOblique.ttf) format("truetype");
   font-weight: 300;
   font-style: italic; }
+
 /*=======================*/
 /* 12 COLUMNS RESPONSIVE GRID
 /*=======================*/
@@ -282,9 +296,9 @@ hr:before {
   body {
     background: #000 url(../assets/img/rotateDevice.png) no-repeat 50% 50%;
     background-size: 30%; }
-
   #app {
     visibility: hidden; } }
+
 /*=======================*/
 /* COMPONENTS
 /*=======================*/
@@ -397,9 +411,10 @@ hr:before {
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
     transform: translateY(-25%); } }
+
 /*@-moz-keyframes mouseMove {
-  @content;
-}  */
+    @content;
+  }  */
 @-ms-keyframes mouseMove {
   0%, 100% {
     -webkit-transform: translateY(0);
@@ -409,9 +424,10 @@ hr:before {
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
     transform: translateY(-25%); } }
+
 /*@-o-keyframes mouseMove {
-  @content;
-}*/
+    @content;
+  }*/
 @keyframes mouseMove {
   0%, 100% {
     -webkit-transform: translateY(0);
@@ -421,6 +437,7 @@ hr:before {
     -webkit-transform: translateY(-25%);
     -ms-transform: translateY(-25%);
     transform: translateY(-25%); } }
+
 /*=======================*/
 /* TOP MOVIE SCREEN
 /*=======================*/
@@ -429,6 +446,7 @@ hr:before {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column; }
+
 #screen_topMovie .topMovie_item {
   width: 100%;
   height: 100%;
@@ -508,6 +526,7 @@ hr:before {
       font-size: 48px;
       margin-top: -0.5em;
       text-shadow: 8px -4px 0 rgba(0, 0, 0, 0.25); }
+
 #screen_topMovie .topMovie_pagination {
   position: absolute;
   width: 100%;
@@ -558,6 +577,7 @@ hr:before {
       transition: width .2s ease-in-out; }
     #screen_topMovie .topMovie_pagination-element.has--watched:after {
       width: 100%; }
+
 #screen_topMovie .topMovie_nav-element {
   position: absolute;
   font-size: 2em;
@@ -576,16 +596,19 @@ hr:before {
     transform: translate3d(0, 0, 0); }
     #screen_topMovie .topMovie_nav-element.is--visible:hover {
       opacity: 1; }
+
 #screen_topMovie .topMovie_nav-prev {
   left: 75px;
   -webkit-transform: translate3d(-100%, 0, 0);
   -ms-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0); }
+
 #screen_topMovie .topMovie_nav-next {
   right: 75px;
   -webkit-transform: translate3d(100%, 0, 0);
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0); }
+
 #screen_topMovie .topMovie_score {
   position: absolute;
   right: 75px;
@@ -618,6 +641,7 @@ hr:before {
     margin-top: 0.5em; }
   #screen_topMovie .topMovie_score-result {
     font-size: 1.25em; }
+
 #screen_topMovie .topMovie_details {
   background: #000;
   display: flex;
@@ -710,5 +734,3 @@ hr:before {
         text-transform: none;
         width: 100%;
         line-height: 1.25em; }
-
-/*# sourceMappingURL=main.css.map */
