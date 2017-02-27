@@ -18,13 +18,13 @@ Dans le cadre d'un abonné myCanal, il pourrait être plus intéressant de montr
 
 L'application utilise React, ainsi qu'un système d'événements basé sur celui de Backbone que j'ai customisé (principalement, l'ajout d'un support pour les namespaces). Côté visuel, j'ai utilisé Vibrant.js pour détecter les couleurs dominantes des images, GreenSock pour les animations, et SASS comme préprocesseur CSS. Le module "store" est un utilitaire me permettant de centraliser des données entre les différents composants de l'application, ainsi que d'utiliser plusieurs fonctions pratiques qui m'évitent de répeter du code (cf. capture). J'utilise également Lodash.
 
-[![Architecture du "store"](http://orion9.net/_demos/incontournables/_readme/store.jpg)](http://orion9.net/_demos/incontournables/_readme/store.jpg)
-
 J'avais initialement en tête de charger les données des films au lancement de l'application afin d'éviter tout temps de chargement pendant son utilisation. Cependant l'API de TMDB limite le nombre de requêtes à 40 toutes les 10 secondes. J'ai donc opté pour le chargement des données d'un film lorsque l'on clique sur "Voir la fiche", d'où un léger temps de chargement au clic.
 
 La nomenclature des fichiers est la suivante : dans "ui", les fichiers "ui_Screen" représentent les écrans à proprement parler, et "ui_Elem" les sous-composants visuels. Je les ai préfixés "ui_" car dans un framework MVC il serait possible d'avoir "ui_topSeries" dans un dossier et "model_topSeries" dans un autre, par exemple. (Je vous invite à regarder [ce repositoire](https://github.com/victoriaNine/xvthTriad/tree/master/app/js) pour vous faire une idée plus claire de l'architecture que j'utilise à plus grande échelle).
 
 Côté responsive et cross-browser, j'ai ajusté le viewport de manière à ce que l'application passe sous tous supports. Elle prend en charge les événements tactiles. Je ne l'ai pas optimisé pour supports mobiles, mais elle tourne (test rapide sur Sony Xperia XZ). J'ai développé sous Chrome Windows 8. J'ai fait quelques ajustements rapides pour Firefox. Je ne l'ai pas testée sous OSX/iOS cependant.
+
+[![Architecture du "store"](http://orion9.net/_demos/incontournables/_readme/store.jpg)](http://orion9.net/_demos/incontournables/_readme/store.jpg)
 
 
 ## Améliorations possibles tech
