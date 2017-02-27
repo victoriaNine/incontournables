@@ -30,7 +30,7 @@ Côté responsive et cross-browser, j'ai ajusté le viewport de manière à ce q
 ## Améliorations possibles tech
 
 La base pour implémenter le top séries est déjà présente, j'ai laissé le composant "ElemTopItem" neutre de manière à ce qu'il puisse servir aussi bien pour les films que les séries. Il faudrait refactoriser "ScreenTopMovie" en classe abstraite "ScreenTop", dont hériteraient "ScreenTopMovie" et "ScreenTopTV".
-Il pourrait être possible de créer aussi une classe abstraite de base "Screen", qui contiendrait par exemple la méthode "screenTransition", actuellement identique dans "ScreenHome" et "ScreenTopMovie". Évidemment, une versione optimisée pour supports mobiles seraient un plus.
+Il pourrait aussi être possible de créer une classe abstraite de base "Screen", qui contiendrait par exemple la méthode "screenTransition", actuellement identique dans "ScreenHome" et "ScreenTopMovie". Une version optimisée pour supports mobiles serait et un chargeur d'assets seraient bien-sûr un plus.
 
 
 ## Temps
