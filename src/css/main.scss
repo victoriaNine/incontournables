@@ -788,7 +788,7 @@ hr:before { right: -8.5px; }
         }
 
         &-content {
-            width: 85%;
+            width: 100%;
             height: 25%;
             bottom:0;
             left: 0;
@@ -798,7 +798,7 @@ hr:before { right: -8.5px; }
             display: flex;
             opacity:0;
             pointer-events:none;
-            @include transform("translate3d(-100%, 0, 0)");
+            @include transform("translate3d(0, 100%, 0)");
             @include transition("transform .4s, opacity .4s");
 
             &.is--visible {
@@ -844,9 +844,9 @@ hr:before { right: -8.5px; }
                 }
 
                 &-overview {
+                    width: 85%;
                     margin-top: 1em;
                     text-transform: none;
-                    width: 100%;
                     line-height: 1.25em;
                 }
             }
