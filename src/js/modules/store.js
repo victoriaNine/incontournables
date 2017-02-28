@@ -218,7 +218,7 @@ function detectScreenChange (el, direction, callback, context, axis = "y") {
         touchstartY = e.touches[0].pageY;
     }, false);
 
-    el.addEventListener("touchend", (e) => {
+    el.addEventListener("touchend", debounce((e) => {
         if (!context.eventsEnabled) {
             return false;
         }
@@ -226,12 +226,20 @@ function detectScreenChange (el, direction, callback, context, axis = "y") {
         touchendX = e.changedTouches[0].pageX;
         touchendY = e.changedTouches[0].pageY;
 
-        if ((direction === "next" && ((axis === "x" && touchendX > touchstartX) || (axis === "y" && touchendY < touchstartY))) ||
-            (direction === "prev" && ((axis === "x" && touchendX < touchstartX) || (axis === "y" && touchendY < touchstartY)))) {
-            e.preventDefault();
-            callback(e);
+        if ((direction === "next" && ((axis === "x" && touchendX < touchstartX) || (axis === "y" && touchendY < touchstartY))) ||
+            (direction === "prev" && ((axis === "x" && touchendX > touchstartX) || (axis === "y" && touchendY > touchstartY)))) {
+
+            if ((axis === "x" && (Math.abs(touchendX - touchstartX) > Math.abs(touchendY - touchstartY))) ||
+                (axis === "y" && (Math.abs(touchendY - touchstartY) > Math.abs(touchendX - touchstartX)))) {
+                e.preventDefault();
+                callback(e);
+            }
         }
-    }, false); 
+    }, 500, {
+      "leading"  : true,
+      "trailing" : false,
+      "maxWait"  : 1500
+    }), false); 
 
     // Molette souris (avec debounce sur l'ecouteur)
     let wheelEventName = "onmousewheel" in window ? "mousewheel" : "wheel";
@@ -243,12 +251,13 @@ function detectScreenChange (el, direction, callback, context, axis = "y") {
 
         if ((direction === "next" && ((axis === "y" && e.deltaY > 0) || (axis === "x" && e.deltaX > 0))) ||
             (direction === "prev" && ((axis === "y" && e.deltaY < 0) || (axis === "x" && e.deltaX < 0)))) {
+            e.preventDefault();
             callback(e);
         }
     }, 500, {
       "leading"  : true,
       "trailing" : false,
-      "maxWait"  : 2000
+      "maxWait"  : 1500
     }), false); 
 }
 

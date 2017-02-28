@@ -165,14 +165,17 @@ class ScreenTopMovie extends Component {
         }
 
         let newItemIndex = this.currentIndex;
-        if (direction === "prev") {
+        if (direction === "prev" && newItemIndex > 0) {
             newItemIndex--;
-        } else if (direction === "next") {
+        } else if (direction === "next" && newItemIndex < (this.totalItems - 1)) {
             newItemIndex++;
         }
 
         newItemIndex = clamp(newItemIndex, 0, (this.totalItems - 1));
-        this.itemTransition(newItemIndex);
+
+        if (newItemIndex !== this.currentIndex) {
+            this.itemTransition(newItemIndex);
+        }
     }
 
     updatePage () {
